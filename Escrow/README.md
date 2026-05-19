@@ -1,66 +1,21 @@
-## Foundry
+## 🤝 Escrow Contract
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+A trust-minimized escrow system between buyer and seller with dispute resolution.
 
-Foundry consists of:
+### Features
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+* Buyer locks ETH into escrow
+* Seller receives payment after delivery confirmation
+* Refund support
+* Arbiter-based dispute resolution
 
-## Documentation
+### Purpose
 
-https://book.getfoundry.sh/
+Built to understand:
 
-## Usage
+* real-world transaction flows
+* escrow mechanics
+* dispute handling
+* state machines in Solidity
 
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+---
